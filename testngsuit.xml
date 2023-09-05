@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="MainTestSuite" verbose="1" >
+    <test name="FirstPack" >
+        <classes>
+            <class name="FormRegistration">
+
+            </class>
+        </classes>
+    </test>
+</suite>
