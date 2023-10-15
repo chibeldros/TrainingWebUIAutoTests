@@ -4,16 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4b836c3-d05e-4c33-81f5-a90ab7bcf3e6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/FormRegistration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testngsuit.xml" afterDir="false" />
+    <list default="true" id="b4b836c3-d05e-4c33-81f5-a90ab7bcf3e6" name="Changes" comment="Added test for valid registration with  minimal required fields">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RestAssuredAPITests/BookStoreRest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SeleniumUITests/Pages/Page.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SeleniumUITests/Pages/StudentRegistrationForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SeleniumUITests/Pages/SubmittingForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SeleniumUITests/Steps/Steps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FormRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SeleniumUITests/FormRegistrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testngsuit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testngsuit.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +24,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -36,22 +38,83 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "openjdk-20",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-20&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Tim\IdeaProjects\TrainingWebUIAutoTests\src\test" />
     </key>
+  </component>
+  <component name="RunManager" selected="TestNG.FormRegistrationTest.testConnect">
+    <configuration name="FormRegistration" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TrainingWebUIAutoTests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SeleniumUITests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="SeleniumUITests" />
+      <option name="MAIN_CLASS_NAME" value="SeleniumUITests.FormRegistration" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FormRegistrationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TrainingWebUIAutoTests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SeleniumUITests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="SeleniumUITests" />
+      <option name="MAIN_CLASS_NAME" value="SeleniumUITests.FormRegistrationTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FormRegistrationTest.testConnect" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TrainingWebUIAutoTests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SeleniumUITests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="SeleniumUITests" />
+      <option name="MAIN_CLASS_NAME" value="SeleniumUITests.FormRegistrationTest" />
+      <option name="METHOD_NAME" value="testConnect" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.FormRegistrationTest.testConnect" />
+        <item itemvalue="TestNG.FormRegistrationTest" />
+        <item itemvalue="TestNG.FormRegistration" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -62,6 +125,29 @@
       <option name="presentableId" value="Default" />
       <updated>1693418700932</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added test for valid registration with  minimal required fields">
+      <created>1693945046575</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1693945046575</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added test for valid registration with  minimal required fields" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added test for valid registration with  minimal required fields" />
   </component>
 </project>

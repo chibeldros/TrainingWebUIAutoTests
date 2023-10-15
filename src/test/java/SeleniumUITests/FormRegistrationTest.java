@@ -1,3 +1,6 @@
+package SeleniumUITests;
+
+import SeleniumUITests.Pages.StudentRegistrationForm;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -10,7 +13,7 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class FormRegistration {
+public class FormRegistrationTest {
     private WebDriver driver;
     private WebDriverWait wait;
     private void connect(String url){
@@ -23,7 +26,7 @@ public class FormRegistration {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("remote-allow-origins=*");
         driver = new ChromeDriver(options);
-        //wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        wait = new WebDriverWait(driver, Duration.ofSeconds(5));
     }
 
     @Test(description = "submit with minimal required fields")
@@ -32,11 +35,15 @@ public class FormRegistration {
         String firstName = "Timon";
         String lastName = "Birmann";
         String mobileNumber = "9876543210";
-        driver.findElement(By.xpath("//*[@id=\"firstName\"]")).sendKeys(firstName);
-        driver.findElement(By.xpath("//*[@id=\"lastName\"]")).sendKeys(lastName);
-        driver.findElement(By.xpath("//*[@id=\"userNumber\"]")).sendKeys(mobileNumber);
-        driver.findElement(By.xpath("//*[@id=\"genterWrapper\"]/div[2]/div[1]/label")).click();
-        driver.findElement(By.xpath("//*[@id=\"submit\"]")).submit();
+        StudentRegistrationForm page = new StudentRegistrationForm(driver);
+        page = page.setFirstName(firstName)
+                .setLastName(lastName)
+                .setMobilenumber(mobileNumber)
+                .setGender()
+                .clickSubmit();
+
+
+    //    driver.findElement(By.xpath("//*[@id=\"submit\"]")).submit();
         wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         driver.findElement(By.xpath("//*[@id=\"closeLargeModal\"]")).click();
     }

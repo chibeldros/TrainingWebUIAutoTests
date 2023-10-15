@@ -3,7 +3,7 @@
 <suite name="MainTestSuite" verbose="1" >
     <test name="FirstPack" >
         <classes>
-            <class name="FormRegistration">
+            <class name="SeleniumUITests.FormRegistrationTest">
 
             </class>
         </classes>
