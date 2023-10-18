@@ -1,7 +1,9 @@
 package SeleniumUITests;
 
+import SeleniumUITests.Pages.CheckSubmit;
 import SeleniumUITests.Pages.StudentRegistrationForm;
-import org.openqa.selenium.By;
+import SeleniumUITests.Steps.Steps;
+
 import org.openqa.selenium.WebDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -15,7 +17,7 @@ import java.time.Duration;
 
 public class FormRegistrationTest {
     private WebDriver driver;
-    private WebDriverWait wait;
+    public WebDriverWait wait;
     private void connect(String url){
         driver.get(url);
     }
@@ -29,8 +31,11 @@ public class FormRegistrationTest {
         wait = new WebDriverWait(driver, Duration.ofSeconds(5));
     }
 
+
     @Test(description = "submit with minimal required fields")
-    public void testConnect() {
+    public void
+
+    testConnect() {
         connect("https://demoqa.com/automation-practice-form");
         String firstName = "Timon";
         String lastName = "Birmann";
@@ -41,11 +46,16 @@ public class FormRegistrationTest {
                 .setMobilenumber(mobileNumber)
                 .setGender()
                 .clickSubmit();
-
-
-    //    driver.findElement(By.xpath("//*[@id=\"submit\"]")).submit();
         wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-        driver.findElement(By.xpath("//*[@id=\"closeLargeModal\"]")).click();
+
+        new Steps(page, new CheckSubmit(driver))
+                .checkCurrentName(firstName + ' ' + lastName)
+                .checkGender("Male")
+                .checkMobile(mobileNumber);
+
+        page.clickCloseButton();
+
+
     }
 
 

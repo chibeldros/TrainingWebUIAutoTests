@@ -27,6 +27,9 @@ public class StudentRegistrationForm implements Page{
     @FindBy(xpath = "//*[@id=\"submit\"]")
     WebElement submitButton;
 
+    @FindBy(xpath = "//*[@id=\"closeLargeModal\"]")
+    WebElement closeButton;
+
     public void init(final WebDriver driver) {
         PageFactory.initElements(driver, this);
     }
@@ -53,6 +56,11 @@ public class StudentRegistrationForm implements Page{
 
     public StudentRegistrationForm clickSubmit(){
         submitButton.submit();
+        return this;
+    }
+
+    public StudentRegistrationForm clickCloseButton(){
+        closeButton.click();
         return this;
     }
 }
